@@ -1,0 +1,92 @@
+licenseName: ~
+licenseKey: ~
+roleSessionAttribute: 'CKFinder_UserRole'
+serveStaticResources: true
+checkSizeAfterScaling: true
+secureImageUploads: true
+csrfProtection: true
+
+backends:
+  - name: 'default'
+    adapter: 'local'
+    baseUrl: 'http://localhost:8080/userfiles'
+    root: '{user.dir}/userfiles'
+    disallowUnsafeCharacters: true
+    forceAscii: false
+    hideFolders: ['.*', 'CVS', '__thumbs']
+    hideFiles: ['.*']
+    htmlExtensions: ['html', 'htm', 'xml', 'js']
+    overwriteOnUpload: false
+    useProxyCommand: false
+
+resourceTypes:
+  - name: 'Files'
+    backend: 'default'
+    directory: '/files'
+    allowedExtensions: 7z,aiff,asf,avi,bmp,csv,doc,docx,fla,flv,gif,gz,gzip,jpeg,jpg,mid,mov,mp3,mp4,mpc,mpeg,mpg,ods,odt,pdf,png,ppt,pptx,pxd,qt,ram,rar,rm,rmi,rmvb,rtf,sdc,sitd,swf,sxc,sxw,tar,tgz,tif,tiff,txt,vsd,wav,wma,wmv,xls,xlsx,zip
+    deniedExtensions: ~
+    maxSize: 0
+  - name: 'Images'
+    backend: 'default'
+    directory: '/images'
+    allowedExtensions: bmp,jpeg,jpg,png
+    deniedExtensions: ~
+    maxSize: 0
+
+privateDir:
+  backend: 'default'
+  path: '.ckfinder/'
+
+thumbnails:
+  enabled: true
+  sizes:
+    - width: 150
+      height: 150
+      quality: 80
+    - width: 300
+      height: 300
+      quality: 80
+    - width: 500
+      height: 500
+      quality: 80
+
+images:
+  maxWidth: 1600
+  maxHeight: 1200
+  quality: 80
+  sizes:
+    small:
+      width: 480
+      height: 320
+      quality: 80
+    medium:
+      width: 600
+      height: 480
+      quality: 80
+    large:
+      width: 800
+      height: 600
+      quality: 80
+
+cache:
+  imagePreview: 86400  # 24 * 3600 (24h)
+  thumbnails: 31536000 # 24 * 3600 * 365 (1 year)
+  proxyCommand: 0
+
+accessControl:
+  - role: '*'
+    resourceType: '*'
+    folder: /
+
+    FOLDER_VIEW: true
+    FOLDER_CREATE: true
+    FOLDER_RENAME: true
+    FOLDER_DELETE: true
+
+    FILE_VIEW: true
+    FILE_CREATE: true
+    FILE_RENAME: true
+    FILE_DELETE: true
+
+    IMAGE_RESIZE: true
+    IMAGE_RESIZE_CUSTOM: true
