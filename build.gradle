@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.4.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+repositories {
+    mavenCentral()
+    maven {
+        url = 'https://maven.cksource.com/'
+    }
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-web:2.1.4.RELEASE'
+    compile 'com.cksource:ckfinder3:3.5.0-BETA'
+}
+
+group = 'com.cksource'
+version = '3.5.0-BETA'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
