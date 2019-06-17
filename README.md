@@ -17,7 +17,7 @@ This repository contains ready-to-use code samples created for the CKFinder Java
    If you are using Maven, execute:
    
    ```sh
-   mvn package
+   ./mvnw package
    ```
 
 3. Run the demo application from the command line with:
