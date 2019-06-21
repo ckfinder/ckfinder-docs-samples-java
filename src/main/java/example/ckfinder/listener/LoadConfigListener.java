@@ -1,4 +1,4 @@
-package example.listener;
+package example.ckfinder.listener;
 
 import com.cksource.ckfinder.config.Config;
 import com.cksource.ckfinder.event.LoadConfigEvent;

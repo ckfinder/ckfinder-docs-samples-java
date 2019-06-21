@@ -25,7 +25,7 @@ public class Application implements ServletContextInitializer, WebMvcConfigurer 
         ServletRegistration.Dynamic dispatcher = servletContext.addServlet("ckfinder", new CKFinderServlet());
         dispatcher.setLoadOnStartup(1);
         dispatcher.addMapping("/ckfinder/*");
-        dispatcher.setInitParameter("scan-path", "example");
+        dispatcher.setInitParameter("scan-path", "example.ckfinder");
 
         String tempDirectory;
 

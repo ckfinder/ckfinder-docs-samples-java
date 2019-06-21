@@ -1,4 +1,4 @@
-package example.authentication;
+package example.ckfinder.authentication;
 
 import com.cksource.ckfinder.authentication.Authenticator;
 
