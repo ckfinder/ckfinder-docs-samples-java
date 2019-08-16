@@ -15,7 +15,7 @@ import java.util.Map;
 
 /**
  * A listener that dynamically changes the location of user files on application start.
- *
+ * <p>
  * It simply replaces the "{user.dir}" placeholder defined in the backend.root
  * configuration with value obtained from "user.dir" system property.
  */

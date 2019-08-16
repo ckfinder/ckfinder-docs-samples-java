@@ -7,9 +7,8 @@ import org.springframework.boot.web.servlet.ServletContextInitializer;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import javax.servlet.MultipartConfigElement;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletRegistration;
+import javax.servlet.*;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.nio.file.Files;
 
@@ -26,6 +25,24 @@ public class Application implements ServletContextInitializer, WebMvcConfigurer 
         dispatcher.setLoadOnStartup(1);
         dispatcher.addMapping("/ckfinder/*");
         dispatcher.setInitParameter("scan-path", "example.ckfinder");
+
+        FilterRegistration.Dynamic filter = servletContext.addFilter("x-content-options", new Filter() {
+            @Override
+            public void init(FilterConfig filterConfig) {
+            }
+
+            @Override
+            public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+                ((HttpServletResponse) response).setHeader("X-Content-Type-Options", "nosniff");
+                chain.doFilter(request, response);
+            }
+
+            @Override
+            public void destroy() {
+            }
+        });
+
+        filter.addMappingForUrlPatterns(null, false, "/userfiles/*");
 
         String tempDirectory;
 
