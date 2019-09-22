@@ -17,6 +17,6 @@ public class CustomConfigLoader implements ConfigLoader {
         ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
         Path configPath = Paths.get(System.getProperty("user.dir"), "ckfinder.yml");
 
-        return mapper.readValue(Files.newInputStream(configPath), Config.class);
+        return mapper.readValue(Files.newInputStream(configPath), CustomConfig.class);
     }
 }

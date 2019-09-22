@@ -1,3 +1,5 @@
+enabled: false # Change this value to "true" to enable the application
+
 licenseName: ~
 licenseKey: ~
 roleSessionAttribute: 'CKFinder_UserRole'

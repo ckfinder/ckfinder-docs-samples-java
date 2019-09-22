@@ -1,10 +1,11 @@
 package example.ckfinder.authentication;
 
 import com.cksource.ckfinder.authentication.Authenticator;
+import example.ckfinder.config.CustomConfig;
+import org.springframework.context.ApplicationContext;
 
 import javax.inject.Inject;
 import javax.inject.Named;
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * WARNING: Your authenticator should never simply return true. By doing so,
@@ -13,12 +14,14 @@ import javax.servlet.http.HttpServletRequest;
  * sure that only trusted users can upload or delete your files.
  */
 @Named
-public class AlwaysTrueAuthenticator implements Authenticator {
+public class ConfigBasedAuthenticator implements Authenticator {
     @Inject
-    HttpServletRequest request;
+    private ApplicationContext applicationContext;
 
     @Override
     public boolean authenticate() {
-        return true;
+        CustomConfig config = applicationContext.getBean(CustomConfig.class);
+
+        return config.isEnabled();
     }
 }
