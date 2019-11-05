@@ -23,6 +23,6 @@ dependencies {
 }
 
 group = 'com.cksource'
-version = '3.5.0-BETA'
+version = '3.5.1-BETA'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
