@@ -3,7 +3,7 @@ Software License Agreement
 
 Copyright (c) 2015, CKSource - Frederico Knabben. All rights reserved.
 
-All sample plugins are licensed under the terms of the MIT License (see Appendix A):
+This sample aplication is licensed under the terms of the MIT license (see Appendix A).
 
 	http://en.wikipedia.org/wiki/MIT_License
 
@@ -13,6 +13,11 @@ Trademarks
 CKFinder is a trademark of CKSource - Frederico Knabben. All other brand
 and product names are trademarks, registered trademarks or service
 marks of their respective holders.
+
+Sources of Intellectual Property required by bundle.
+----------------------------------------------------
+
+CKFinder distribution is licensed under a separate CKFinder License.
 
 ---
 
