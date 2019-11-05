@@ -19,8 +19,14 @@ This repository contains ready-to-use code samples created for the CKFinder Java
    ```sh
    ./mvnw package
    ```
-
-3. Run the demo application from the command line with:
+3. Enable CKFinder
+   In the `ckfinder.yml` file change the first line `enabled` parameter to `true` as follows:
+   
+   ```yaml
+   enabled: true # Change this value to "true" to enable the application
+   ```
+   
+4. Run the demo application from the command line with:
 
    If you are using Gradle:
 
@@ -35,10 +41,6 @@ This repository contains ready-to-use code samples created for the CKFinder Java
    ```
    
 4. Open http://localhost:8080/ckfinder/static/samples/index.html in your browser to see CKFinder samples.
-
-**IMPORTANT**: This demo application has the authentication disabled. For simplicity, the authenticator [always returns `true`](https://github.com/ckfinder/ckfinder-docs-samples-java/blob/master/src/main/java/example/ckfinder/authentication/AlwaysTrueAuthenticator.java#L22),
-which is obviously not secure. Yor authenticator should never do that. By doing so, you are allowing **anyone** to upload and list the files on your server. **Do not use this demo on production!**
-
 
 ## License
 
