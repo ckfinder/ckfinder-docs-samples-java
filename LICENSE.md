@@ -17,7 +17,7 @@ marks of their respective holders.
 Sources of Intellectual Property required by bundle.
 ----------------------------------------------------
 
-CKFinder distribution is licensed under a separate CKFinder License.
+CKFinder is distributed under the [CKFinder License Agreement](http://cksource.com/license/ckfinder) In order to purchase a license visit the [CKEditor Ecosystem website](https://ckeditor.com/pricing/).
 
 ---
 
