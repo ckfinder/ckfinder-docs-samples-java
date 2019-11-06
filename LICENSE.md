@@ -1,7 +1,7 @@
 Software License Agreement
 ==========================
 
-Copyright (c) 2015, CKSource - Frederico Knabben. All rights reserved.
+Copyright (c) 2019, CKSource - Frederico Knabben. All rights reserved.
 
 This sample aplication is licensed under the terms of the MIT license (see Appendix A).
 
@@ -14,7 +14,7 @@ CKFinder is a trademark of CKSource - Frederico Knabben. All other brand
 and product names are trademarks, registered trademarks or service
 marks of their respective holders.
 
-Sources of Intellectual Property required by bundle.
+Sources of Intellectual Property used in this code.
 ----------------------------------------------------
 
 CKFinder is distributed under the [CKFinder License Agreement](http://cksource.com/license/ckfinder) In order to purchase a license visit the [CKEditor Ecosystem website](https://ckeditor.com/pricing/).
@@ -26,7 +26,7 @@ Appendix A: The MIT License
 
 The MIT License (MIT)
 
-Copyright (c) 2015, CKSource - Frederico Knabben
+Copyright (c) 2019, CKSource - Frederico Knabben
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -19,8 +19,9 @@ This repository contains ready-to-use code samples created for the CKFinder Java
    ```sh
    ./mvnw package
    ```
-3. Enable CKFinder
-   In the `ckfinder.yml` file change the first line `enabled` parameter to `true` as follows:
+3. Modify configuration to enable the application.
+
+   In the `ckfinder.yml` configuration file change the value of parameter named `enabled` to `true` as follows:
    
    ```yaml
    enabled: true # Change this value to "true" to enable the application
@@ -46,3 +47,7 @@ This repository contains ready-to-use code samples created for the CKFinder Java
 
 Copyright (c) 2019, CKSource - Frederico Knabben. All rights reserved.
 For license details see: [LICENSE.md](https://github.com/ckfinder/ckfinder-docs-samples-java/blob/master/LICENSE.md).
+
+## Sources of Intellectual Property used in this code
+
+CKFinder is distributed under the [CKFinder License Agreement](http://cksource.com/license/ckfinder) In order to purchase a license visit the [CKEditor Ecosystem website](https://ckeditor.com/pricing/).
