@@ -32,13 +32,13 @@ This repository contains ready-to-use code samples created for the CKFinder Java
    If you are using Gradle:
 
    ```sh
-   java -jar build/libs/ckfinder-docs-samples-java-3.5.0-BETA.jar
+   java -jar build/libs/ckfinder-docs-samples-java-3.5.1.jar
    ```
 
    If you are using Maven:
 
    ```sh
-   java -jar target/ckfinder-docs-samples-java-3.5.0-BETA.jar 
+   java -jar target/ckfinder-docs-samples-java-3.5.1.jar 
    ```
    
 4. Open http://localhost:8080/ckfinder/static/samples/index.html in your browser to see CKFinder samples.

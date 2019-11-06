@@ -6,7 +6,7 @@
 
     <groupId>com.cksource</groupId>
     <artifactId>ckfinder-docs-samples-java</artifactId>
-    <version>3.5.1-BETA</version>
+    <version>3.5.1</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -22,7 +22,7 @@
         <dependency>
             <groupId>com.cksource</groupId>
             <artifactId>ckfinder3</artifactId>
-            <version>3.5.1-BETA</version>
+            <version>3.5.1</version>
         </dependency>
     </dependencies>
 
