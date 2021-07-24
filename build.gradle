@@ -19,10 +19,10 @@ repositories {
 
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web:2.1.4.RELEASE'
-    compile 'com.cksource:ckfinder3:3.5.1.1'
+    compile 'com.cksource:ckfinder3:3.5.2'
 }
 
 group = 'com.cksource'
-version = '3.5.1.1'
+version = '3.5.2'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
