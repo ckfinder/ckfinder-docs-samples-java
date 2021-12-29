@@ -24,6 +24,11 @@
             <artifactId>ckfinder3</artifactId>
             <version>3.5.2</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.zaak</groupId>
+            <artifactId>Amazon-S3-FileSystem-NIO2</artifactId>
+            <version>950eec8ba7a8ae9bbd25568d3ba44a50c352f1f3</version>
+        </dependency>
     </dependencies>
 
     <properties>
@@ -40,6 +45,10 @@
     </build>
 
     <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
         <repository>
             <id>cksource-mvn-repo</id>
             <name>CKSource Maven Repository</name>

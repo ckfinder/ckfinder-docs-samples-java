@@ -1,4 +1,4 @@
-enabled: false # Change this value to "true" to enable the application
+enabled: true # Change this value to "true" to enable the application
 
 licenseName: ~
 licenseKey: ~
@@ -20,6 +20,12 @@ backends:
     htmlExtensions: ['html', 'htm', 'xml', 'js']
     overwriteOnUpload: false
     useProxyCommand: false
+  - name: s3
+    adapter: s3
+    root: /bucket-name
+    fileSystemOptions:
+      s3fs_access_key: aws-credentials-key
+      s3fs_secret_key: aws-credentials-secret
 
 resourceTypes:
   - name: 'Files'
@@ -34,6 +40,9 @@ resourceTypes:
     allowedExtensions: bmp,jpeg,jpg,png
     deniedExtensions: ~
     maxSize: 0
+  - name: S3
+    backend: s3
+    directory: /
 
 privateDir:
   backend: 'default'
