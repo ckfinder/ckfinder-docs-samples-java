@@ -21,11 +21,19 @@ public class PerRequestConfigListener implements Listener<GetConfigForRequestEve
     public void onApplicationEvent(GetConfigForRequestEvent event) {
         HttpServletRequest request =  event.getRequest();
 
-        Optional<Cookie> cookie = Arrays.stream(request.getCookies())
-                .filter(c -> c.getName().equals("user"))
-                .findFirst();
+        String username = "anonymous";
+        Cookie[] cookies = request.getCookies();
 
-        String username = cookie.isPresent() ? cookie.get().getValue() : "anonymous";
+        if (cookies != null) {
+            Optional<Cookie> cookie = Arrays.stream(cookies)
+                    .filter(c -> c.getName().equals("user"))
+                    .findFirst();
+
+            if (cookie.isPresent()) {
+                username = cookie.get().getValue();
+            }
+        }
+
 
         logger.info("User in cookie is: " + username);
 
