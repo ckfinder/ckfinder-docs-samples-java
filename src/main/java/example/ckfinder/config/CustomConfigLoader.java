@@ -5,7 +5,7 @@ import com.cksource.ckfinder.config.loader.ConfigLoader;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;

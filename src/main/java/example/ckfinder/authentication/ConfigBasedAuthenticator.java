@@ -4,8 +4,8 @@ import com.cksource.ckfinder.authentication.Authenticator;
 import example.ckfinder.config.CustomConfig;
 import org.springframework.context.ApplicationContext;
 
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 /**
  * WARNING: Your authenticator should never simply return true. By doing so,
