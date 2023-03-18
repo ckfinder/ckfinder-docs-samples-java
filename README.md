@@ -32,20 +32,20 @@ This repository contains ready-to-use code samples created for the CKFinder Java
    If you are using Gradle:
 
    ```sh
-   java -jar build/libs/ckfinder-docs-samples-java-3.6.0.jar
+   java -jar build/libs/ckfinder-docs-samples-java-3.6.1.jar
    ```
 
    If you are using Maven:
 
    ```sh
-   java -jar target/ckfinder-docs-samples-java-3.6.0.jar
+   java -jar target/ckfinder-docs-samples-java-3.6.1.jar
    ```
    
 5. Open http://localhost:8080/ckfinder/static/samples/index.html in your browser to see CKFinder samples.
 
 ## License
 
-Copyright (c) 2022, CKSource Holding sp. z o.o. All rights reserved.
+Copyright (c) 2023, CKSource Holding sp. z o.o. All rights reserved.
 For license details see: [LICENSE.md](https://github.com/ckfinder/ckfinder-docs-samples-java/blob/master/LICENSE.md).
 
 ## Sources of Intellectual Property used in this code
