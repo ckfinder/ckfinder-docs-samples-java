@@ -45,7 +45,7 @@ This repository contains ready-to-use code samples created for the CKFinder Java
 
 ## License
 
-Copyright (c) 2023, CKSource Holding sp. z o.o. All rights reserved.
+Copyright (c) 2024, CKSource Holding sp. z o.o. All rights reserved.
 For license details see: [LICENSE.md](https://github.com/ckfinder/ckfinder-docs-samples-java/blob/master/LICENSE.md).
 
 ## Sources of Intellectual Property used in this code
