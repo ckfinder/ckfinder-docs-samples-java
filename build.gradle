@@ -13,8 +13,8 @@ repositories {
 dependencies {
     implementation platform('org.springframework.boot:spring-boot-dependencies:3.0.4')
     implementation 'org.springframework.boot:spring-boot-starter-web:3.0.4'
-    implementation 'com.cksource:ckfinder3:4.0.0'
+    implementation 'com.cksource:ckfinder3:4.0.1'
 }
 
 group = 'com.cksource'
-version = '4.0.0'
+version = '4.0.1'
