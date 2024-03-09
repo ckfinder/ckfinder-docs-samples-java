@@ -1,4 +1,4 @@
-enabled: false # Change this value to "true" to enable the application
+enabled: true # Change this value to "true" to enable the application
 
 licenseName: ~
 licenseKey: ~
@@ -22,13 +22,14 @@ backends:
     useProxyCommand: false
 
 resourceTypes:
-  - name: 'Files'
+  - name: 'SiteImages'
+    label: 'Site Images'
     backend: 'default'
-    directory: '/files'
+    directory: '/sites/{siteId}/files'
     allowedExtensions: 7z,aiff,asf,avi,bmp,csv,doc,docx,fla,flv,gif,gz,gzip,jpeg,jpg,mid,mov,mp3,mp4,mpc,mpeg,mpg,ods,odt,pdf,png,ppt,pptx,pxd,qt,ram,rar,rm,rmi,rmvb,rtf,sdc,sitd,swf,sxc,sxw,tar,tgz,tif,tiff,txt,vsd,wav,wma,wmv,xls,xlsx,zip
     deniedExtensions: ~
     maxSize: 0
-  - name: 'Images'
+  - name: 'SharedImages'
     backend: 'default'
     directory: '/images'
     allowedExtensions: bmp,jpeg,jpg,png
